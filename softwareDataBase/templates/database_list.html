@@ -1,0 +1,9 @@
+
+{% block content %}
+    <form method="GET" action="{% url 'chart' %}">
+        {{ form.as_p }}
+    </form>
+
+    {{ chart|safe }}
+{% endblock content %}
+
